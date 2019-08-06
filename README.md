@@ -28,7 +28,9 @@ packages. The following software must be installed:
 
 To install the R package simply execute from R:
 
+```{r}
 > install.packages("HextractoR", dependencies=T)
+```
 
 How to preprocess a genome
 --------------------------
@@ -60,6 +62,7 @@ result of the proccessing of each sequence (if it was succesful or failed)
 
 Examples
 --------
+```{r}
 # Small example without filter files library(HextractoR)
 # First we get the path of the example FASTA file
 fpath <- system.file("Example_tiny.fasta", package="HextractoR")
@@ -72,4 +75,4 @@ fpath2 <- system.file("Example_pre-miRNA.fasta", package="HextractoR")
 HextractoR(input_file = fpath1, filter_files = {fpath2})
 # This function creates 2 files in the working directory and automatically
 # names them.
-
+```
