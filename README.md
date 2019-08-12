@@ -29,7 +29,7 @@ packages. The following software must be installed:
 To install the R package simply execute from R:
 
 ```{r}
-> install.packages("HextractoR", dependencies=T)
+install.packages("HextractoR", dependencies=T)
 ```
 
 How to preprocess a genome
