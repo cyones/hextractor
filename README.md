@@ -62,17 +62,25 @@ result of the proccessing of each sequence (if it was succesful or failed)
 
 Examples
 --------
-```{r}
-# Small example without filter files library(HextractoR)
-# First we get the path of the example FASTA file
-fpath <- system.file("Example_tiny.fasta", package="HextractoR")
-# To run HextractoR, simply call the main function
-HextractoR(input_file = fpath)
 
-# Other example with filter files and bigger input file
+Small example without filter files
+
+First we get the path of the example FASTA file
+```{r}
+library(HextractoR)
+fpath <- system.file("Example_tiny.fasta", package="HextractoR")
+```
+
+To run HextractoR, simply call the main function
+```{r}
+HextractoR(input_file = fpath)
+```
+
+Other example with filter files and bigger input file
+```{r}
 fpath1 <- system.file("Example_human.fasta", package="HextractoR")
 fpath2 <- system.file("Example_pre-miRNA.fasta", package="HextractoR")
 HextractoR(input_file = fpath1, filter_files = {fpath2})
-# This function creates 2 files in the working directory and automatically
-# names them.
 ```
+This function creates 2 files in the working directory and automatically names them.
+
