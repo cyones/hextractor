@@ -11,19 +11,19 @@ http://sourceforge.net/projects/sourcesinc/files/HextractoR/
 
 Contact
 - Cristian Yones <cyones@sinc.unl.edu.ar>
-- sinc(i):  http://fich.unl.edu.ar/sinc/
+- sinc(i):  http://sinc.unl.edu.ar
 
 Installation
 ------------
-HextractoR was tested in R > 3.4, but it probably work in older versions as well.
-For folding and alignment of sequences the toolbox uses some external well-known
-packages. The following software must be installed:
+HextractoR was tested in R > 3.4, but it can probably work in older versions as well.
+For folding and aligning sequences, the toolbox uses some external well-known packages.
+The following software must be installed:
 
 - Vienna RNA: this package is used to fold sequences and alignments.
   Download: https://www.tbi.univie.ac.at/RNA/
 
 - NCBI blast+: this package is used to identify the known miRNAs and the
-  sequence to discard.
+  sequences to discard.
   Download: ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/
 
 To install the R package simply execute from R:
@@ -32,14 +32,14 @@ To install the R package simply execute from R:
 install.packages("HextractoR", dependencies=T)
 ```
 
-How to preprocess a genome
+How to process a genome
 --------------------------
-To preprocess a genome, you need a file containing the raw genome in fasta format.
+For processing a genome, you need a file containing the raw genome in FASTA format.
 To run HExtractor, simply call the main function. This function creates 2 files
 in the "out" folder and automatically names them. The input parameters are:
-- input_file filename of the fasta file to proccess
+- input_file filename of the fasta file to process
 - window_size Number of bases in the windows.
-- window_step Window step. This number defines indirectly the overlap:
+- window_step Window step. This number defines the overlap window:
   window_overlap=window_size-window_step
 - min_length Minimum sequence length. Shorter sequences are discarded.
 - min_bp Minimum number of base-pairs that must form a sequence.
@@ -58,7 +58,7 @@ in the "out" folder and automatically names them. The input parameters are:
 - filter_files Fasta files with known sequences to separate the output stems.
 
 HextractoR function returns a list with the path of the output files and the
-result of the proccessing of each sequence (if it was succesful or failed)
+result of the processing of each sequence (if it was succesful or failed)
 
 Examples
 --------
@@ -76,7 +76,7 @@ To run HextractoR, simply call the main function
 HextractoR(input_file = fpath)
 ```
 
-Other example with filter files and bigger input file
+Other example with filter files and a larger input file
 ```{r}
 fpath1 <- system.file("Example_human.fasta", package="HextractoR")
 fpath2 <- system.file("Example_pre-miRNA.fasta", package="HextractoR")
