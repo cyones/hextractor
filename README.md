@@ -6,8 +6,7 @@ several overlapped segments, with longer length than the mean length of
 sequences of interest for the species under processing, ensuring that no one is
 lost nor inappropriately cut.
 
-The last version can be found at:
-http://sourceforge.net/projects/sourcesinc/files/HextractoR/
+Publication: https://www.biorxiv.org/content/10.1101/2020.10.09.333898v1
 
 Contact
 - Cristian Yones <cyones@sinc.unl.edu.ar>
