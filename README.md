@@ -1,4 +1,4 @@
-This is the version 1.4 of the HextractoR toolbox
+This is the version 1.5 of the HextractoR toolbox
 -------------------------------------------------
 Simple and integrated tool that automatically extracts and folds all hairpin
 sequences from raw genome-wide data. It predicts the secondary structure of
