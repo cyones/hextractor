@@ -13,5 +13,6 @@ Imports:
     parallel,
     doParallel,
     foreach,
+    snow,
 NeedsCompilation: no
 RoxygenNote: 6.1.1
